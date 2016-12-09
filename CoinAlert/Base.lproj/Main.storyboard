@@ -6,9 +6,18 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Titillium-Bold.otf">
+            <string>Titillium-Bold</string>
+        </array>
+        <array key="Titillium-Regular.otf">
+            <string>Titillium-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -22,65 +31,90 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muN-PW-HvI">
-                                <rect key="frame" x="134" y="294" width="107" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$1337" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v38-Hg-85I">
-                                <rect key="frame" x="163" y="323" width="49" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bfd-Hb-35W">
-                                <rect key="frame" x="173" y="333" width="150" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NQZ-fM-CTw">
-                                <rect key="frame" x="183" y="343" width="150" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rzf-HM-aWF">
-                                <rect key="frame" x="193" y="353" width="150" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="powered by Coinbase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffv-ox-f71">
-                                <rect key="frame" x="104" y="352" width="166" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CoinAlert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hf-on-Qm7">
-                                <rect key="frame" x="118" y="53" width="139" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AfH-KG-SOV">
                                 <rect key="frame" x="16" y="645" width="343" height="2"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Unable to Reload Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dd1-vJ-4yr">
-                                <rect key="frame" x="100" y="616" width="174" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coinbase" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GL0-vw-yp8">
+                                <rect key="frame" x="68" y="462" width="238" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="nXf-Qk-eVc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Titillium-Bold" family="Titillium" pointSize="20"/>
+                                <color key="textColor" red="0.11372549019607843" green="0.45882352941176469" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="underlineStyle" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unable to Reload Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dd1-vJ-4yr">
+                                <rect key="frame" x="100" y="612" width="174" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="URT-c0-jSE"/>
+                                    <constraint firstAttribute="width" constant="174" id="eHw-7k-hay"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Titillium-Regular" family="Titillium" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="powered by" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffv-ox-f71">
+                                <rect key="frame" x="68" y="433" width="238" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="mbt-3x-dBJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Titillium-Regular" family="Titillium" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1337" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v38-Hg-85I">
+                                <rect key="frame" x="113" y="365" width="149" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="lAG-6n-2nw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Titillium-Regular" family="Titillium" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Price of 1 BTC:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muN-PW-HvI">
+                                <rect key="frame" x="16" y="309" width="343" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="SdO-yC-3ia"/>
+                                    <constraint firstAttribute="height" constant="48" id="d6K-7N-pcz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Titillium-Regular" family="Titillium" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CALogo" translatesAutoresizingMaskIntoConstraints="NO" id="aUL-Mg-eBQ">
+                                <rect key="frame" x="0.0" y="28" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aUL-Mg-eBQ" secondAttribute="height" multiplier="15:8" id="InF-ku-u6H"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="AfH-KG-SOV" secondAttribute="trailing" id="Bsv-4J-ANA"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AfH-KG-SOV" secondAttribute="bottom" constant="20" id="hD4-Qc-I0h"/>
-                            <constraint firstItem="AfH-KG-SOV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="x17-6N-k1q"/>
+                            <constraint firstItem="ffv-ox-f71" firstAttribute="leading" secondItem="GL0-vw-yp8" secondAttribute="leading" id="2zi-1m-ETr"/>
+                            <constraint firstItem="AfH-KG-SOV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Bd0-cd-pPG"/>
+                            <constraint firstItem="AfH-KG-SOV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BoH-dH-Y1K"/>
+                            <constraint firstItem="GL0-vw-yp8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dm4-fb-oHY"/>
+                            <constraint firstAttribute="bottom" secondItem="AfH-KG-SOV" secondAttribute="bottom" constant="20" symbolic="YES" id="IJO-nb-rn7"/>
+                            <constraint firstAttribute="trailing" secondItem="aUL-Mg-eBQ" secondAttribute="trailing" id="MVM-Op-dLP"/>
+                            <constraint firstItem="ffv-ox-f71" firstAttribute="top" secondItem="v38-Hg-85I" secondAttribute="bottom" constant="38" id="TqK-1p-epQ"/>
+                            <constraint firstItem="ffv-ox-f71" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tvq-cM-mMF"/>
+                            <constraint firstItem="muN-PW-HvI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dbw-ia-WZ9"/>
+                            <constraint firstItem="GL0-vw-yp8" firstAttribute="top" secondItem="ffv-ox-f71" secondAttribute="bottom" constant="8" symbolic="YES" id="gzu-Vm-i0q"/>
+                            <constraint firstItem="aUL-Mg-eBQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jl5-MM-b8c"/>
+                            <constraint firstItem="Dd1-vJ-4yr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jvY-F3-xeO"/>
+                            <constraint firstItem="aUL-Mg-eBQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="28" id="kW2-IX-ebR"/>
+                            <constraint firstItem="muN-PW-HvI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m7a-fm-tfc"/>
+                            <constraint firstItem="v38-Hg-85I" firstAttribute="top" secondItem="muN-PW-HvI" secondAttribute="bottom" constant="8" symbolic="YES" id="oh0-B8-C6D"/>
+                            <constraint firstItem="v38-Hg-85I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qFx-yw-iz2"/>
+                            <constraint firstItem="ffv-ox-f71" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="tc7-TF-jZD"/>
+                            <constraint firstItem="AfH-KG-SOV" firstAttribute="top" secondItem="Dd1-vJ-4yr" secondAttribute="bottom" constant="12" id="vNa-dh-kMo"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="coinbaseLabel" destination="GL0-vw-yp8" id="xaZ-Fd-nEU"/>
                         <outlet property="errorLabel" destination="Dd1-vJ-4yr" id="sS3-py-CeI"/>
                         <outlet property="priceLabel" destination="v38-Hg-85I" id="uFX-5F-ytU"/>
                         <outlet property="timeBar" destination="AfH-KG-SOV" id="qhK-tt-3vy"/>
@@ -91,4 +125,7 @@
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CALogo" width="1000" height="764"/>
+    </resources>
 </document>

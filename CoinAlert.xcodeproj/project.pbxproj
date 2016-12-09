@@ -12,6 +12,14 @@
 		2348AD2B1DF8FEDE007BA8D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2348AD291DF8FEDE007BA8D6 /* Main.storyboard */; };
 		2348AD2D1DF8FEDE007BA8D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2348AD2C1DF8FEDE007BA8D6 /* Assets.xcassets */; };
 		2348AD301DF8FEDE007BA8D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2348AD2E1DF8FEDE007BA8D6 /* LaunchScreen.storyboard */; };
+		2355C8611DFB614800454C14 /* Titillium-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2355C8591DFB614800454C14 /* Titillium-Black.otf */; };
+		2355C8621DFB614800454C14 /* Titillium-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2355C85A1DFB614800454C14 /* Titillium-Bold.otf */; };
+		2355C8631DFB614800454C14 /* Titillium-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2355C85B1DFB614800454C14 /* Titillium-Light.otf */; };
+		2355C8641DFB614800454C14 /* Titillium-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2355C85C1DFB614800454C14 /* Titillium-Regular.otf */; };
+		2355C8651DFB614800454C14 /* Titillium-RegularUpright.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2355C85D1DFB614800454C14 /* Titillium-RegularUpright.otf */; };
+		2355C8661DFB614800454C14 /* Titillium-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2355C85E1DFB614800454C14 /* Titillium-Semibold.otf */; };
+		2355C8671DFB614800454C14 /* Titillium-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2355C85F1DFB614800454C14 /* Titillium-Thin.otf */; };
+		2355C8681DFB614800454C14 /* Titillium-ThinUpright.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2355C8601DFB614800454C14 /* Titillium-ThinUpright.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		2348AD2C1DF8FEDE007BA8D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2348AD2F1DF8FEDE007BA8D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2348AD311DF8FEDE007BA8D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2355C8591DFB614800454C14 /* Titillium-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-Black.otf"; sourceTree = "<group>"; };
+		2355C85A1DFB614800454C14 /* Titillium-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-Bold.otf"; sourceTree = "<group>"; };
+		2355C85B1DFB614800454C14 /* Titillium-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-Light.otf"; sourceTree = "<group>"; };
+		2355C85C1DFB614800454C14 /* Titillium-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-Regular.otf"; sourceTree = "<group>"; };
+		2355C85D1DFB614800454C14 /* Titillium-RegularUpright.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-RegularUpright.otf"; sourceTree = "<group>"; };
+		2355C85E1DFB614800454C14 /* Titillium-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-Semibold.otf"; sourceTree = "<group>"; };
+		2355C85F1DFB614800454C14 /* Titillium-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-Thin.otf"; sourceTree = "<group>"; };
+		2355C8601DFB614800454C14 /* Titillium-ThinUpright.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-ThinUpright.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				2348AD251DF8FEDE007BA8D6 /* AppDelegate.swift */,
+				2355C8581DFB612900454C14 /* Fonts */,
 				2348AD271DF8FEDE007BA8D6 /* ViewController.swift */,
 				2348AD291DF8FEDE007BA8D6 /* Main.storyboard */,
 				2348AD2C1DF8FEDE007BA8D6 /* Assets.xcassets */,
@@ -62,6 +79,21 @@
 				2348AD311DF8FEDE007BA8D6 /* Info.plist */,
 			);
 			path = CoinAlert;
+			sourceTree = "<group>";
+		};
+		2355C8581DFB612900454C14 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2355C8591DFB614800454C14 /* Titillium-Black.otf */,
+				2355C85A1DFB614800454C14 /* Titillium-Bold.otf */,
+				2355C85B1DFB614800454C14 /* Titillium-Light.otf */,
+				2355C85C1DFB614800454C14 /* Titillium-Regular.otf */,
+				2355C85D1DFB614800454C14 /* Titillium-RegularUpright.otf */,
+				2355C85E1DFB614800454C14 /* Titillium-Semibold.otf */,
+				2355C85F1DFB614800454C14 /* Titillium-Thin.otf */,
+				2355C8601DFB614800454C14 /* Titillium-ThinUpright.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +155,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2355C8661DFB614800454C14 /* Titillium-Semibold.otf in Resources */,
+				2355C8631DFB614800454C14 /* Titillium-Light.otf in Resources */,
 				2348AD301DF8FEDE007BA8D6 /* LaunchScreen.storyboard in Resources */,
+				2355C8651DFB614800454C14 /* Titillium-RegularUpright.otf in Resources */,
+				2355C8621DFB614800454C14 /* Titillium-Bold.otf in Resources */,
+				2355C8611DFB614800454C14 /* Titillium-Black.otf in Resources */,
+				2355C8681DFB614800454C14 /* Titillium-ThinUpright.otf in Resources */,
 				2348AD2D1DF8FEDE007BA8D6 /* Assets.xcassets in Resources */,
 				2348AD2B1DF8FEDE007BA8D6 /* Main.storyboard in Resources */,
+				2355C8671DFB614800454C14 /* Titillium-Thin.otf in Resources */,
+				2355C8641DFB614800454C14 /* Titillium-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +341,7 @@
 				2348AD361DF8FEDE007BA8D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
