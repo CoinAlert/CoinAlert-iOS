@@ -20,7 +20,46 @@
 		2355C8661DFB614800454C14 /* Titillium-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2355C85E1DFB614800454C14 /* Titillium-Semibold.otf */; };
 		2355C8671DFB614800454C14 /* Titillium-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2355C85F1DFB614800454C14 /* Titillium-Thin.otf */; };
 		2355C8681DFB614800454C14 /* Titillium-ThinUpright.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2355C8601DFB614800454C14 /* Titillium-ThinUpright.otf */; };
+		2355C8701DFB9A6300454C14 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2355C86F1DFB9A6300454C14 /* IntentHandler.swift */; };
+		2355C8791DFB9A6300454C14 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2355C8781DFB9A6300454C14 /* IntentsUI.framework */; };
+		2355C87C1DFB9A6300454C14 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2355C87B1DFB9A6300454C14 /* IntentViewController.swift */; };
+		2355C87F1DFB9A6300454C14 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2355C87D1DFB9A6300454C14 /* MainInterface.storyboard */; };
+		2355C8831DFB9A6300454C14 /* CoinAlertSiriIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2355C8761DFB9A6300454C14 /* CoinAlertSiriIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2355C8861DFB9A6300454C14 /* CoinAlertSiriIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2355C86D1DFB9A6200454C14 /* CoinAlertSiriIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2355C88F1DFB9BE700454C14 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2355C88E1DFB9BE700454C14 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2355C8811DFB9A6300454C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2348AD1A1DF8FEDD007BA8D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2355C8751DFB9A6300454C14;
+			remoteInfo = CoinAlertSiriIntentUI;
+		};
+		2355C8841DFB9A6300454C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2348AD1A1DF8FEDD007BA8D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2355C86C1DFB9A6200454C14;
+			remoteInfo = CoinAlertSiriIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2355C88D1DFB9A6300454C14 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2355C8831DFB9A6300454C14 /* CoinAlertSiriIntentUI.appex in Embed App Extensions */,
+				2355C8861DFB9A6300454C14 /* CoinAlertSiriIntent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2348AD221DF8FEDE007BA8D6 /* CoinAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +77,15 @@
 		2355C85E1DFB614800454C14 /* Titillium-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-Semibold.otf"; sourceTree = "<group>"; };
 		2355C85F1DFB614800454C14 /* Titillium-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-Thin.otf"; sourceTree = "<group>"; };
 		2355C8601DFB614800454C14 /* Titillium-ThinUpright.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Titillium-ThinUpright.otf"; sourceTree = "<group>"; };
+		2355C86D1DFB9A6200454C14 /* CoinAlertSiriIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CoinAlertSiriIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2355C86F1DFB9A6300454C14 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		2355C8711DFB9A6300454C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2355C8761DFB9A6300454C14 /* CoinAlertSiriIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CoinAlertSiriIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2355C8781DFB9A6300454C14 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		2355C87B1DFB9A6300454C14 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		2355C87E1DFB9A6300454C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2355C8801DFB9A6300454C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2355C88E1DFB9BE700454C14 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +96,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2355C86A1DFB9A6200454C14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2355C8731DFB9A6300454C14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2355C88F1DFB9BE700454C14 /* CoreLocation.framework in Frameworks */,
+				2355C8791DFB9A6300454C14 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				2348AD241DF8FEDE007BA8D6 /* CoinAlert */,
+				2355C86E1DFB9A6300454C14 /* CoinAlertSiriIntent */,
+				2355C87A1DFB9A6300454C14 /* CoinAlertSiriIntentUI */,
+				2355C8771DFB9A6300454C14 /* Frameworks */,
 				2348AD231DF8FEDE007BA8D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				2348AD221DF8FEDE007BA8D6 /* CoinAlert.app */,
+				2355C86D1DFB9A6200454C14 /* CoinAlertSiriIntent.appex */,
+				2355C8761DFB9A6300454C14 /* CoinAlertSiriIntentUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +165,34 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
+		2355C86E1DFB9A6300454C14 /* CoinAlertSiriIntent */ = {
+			isa = PBXGroup;
+			children = (
+				2355C86F1DFB9A6300454C14 /* IntentHandler.swift */,
+				2355C8711DFB9A6300454C14 /* Info.plist */,
+			);
+			path = CoinAlertSiriIntent;
+			sourceTree = "<group>";
+		};
+		2355C8771DFB9A6300454C14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2355C88E1DFB9BE700454C14 /* CoreLocation.framework */,
+				2355C8781DFB9A6300454C14 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2355C87A1DFB9A6300454C14 /* CoinAlertSiriIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				2355C87B1DFB9A6300454C14 /* IntentViewController.swift */,
+				2355C87D1DFB9A6300454C14 /* MainInterface.storyboard */,
+				2355C8801DFB9A6300454C14 /* Info.plist */,
+			);
+			path = CoinAlertSiriIntentUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,15 +203,52 @@
 				2348AD1E1DF8FEDD007BA8D6 /* Sources */,
 				2348AD1F1DF8FEDD007BA8D6 /* Frameworks */,
 				2348AD201DF8FEDD007BA8D6 /* Resources */,
+				2355C88D1DFB9A6300454C14 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2355C8821DFB9A6300454C14 /* PBXTargetDependency */,
+				2355C8851DFB9A6300454C14 /* PBXTargetDependency */,
 			);
 			name = CoinAlert;
 			productName = CoinAlert;
 			productReference = 2348AD221DF8FEDE007BA8D6 /* CoinAlert.app */;
 			productType = "com.apple.product-type.application";
+		};
+		2355C86C1DFB9A6200454C14 /* CoinAlertSiriIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2355C88A1DFB9A6300454C14 /* Build configuration list for PBXNativeTarget "CoinAlertSiriIntent" */;
+			buildPhases = (
+				2355C8691DFB9A6200454C14 /* Sources */,
+				2355C86A1DFB9A6200454C14 /* Frameworks */,
+				2355C86B1DFB9A6200454C14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoinAlertSiriIntent;
+			productName = CoinAlertSiriIntent;
+			productReference = 2355C86D1DFB9A6200454C14 /* CoinAlertSiriIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		2355C8751DFB9A6300454C14 /* CoinAlertSiriIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2355C8871DFB9A6300454C14 /* Build configuration list for PBXNativeTarget "CoinAlertSiriIntentUI" */;
+			buildPhases = (
+				2355C8721DFB9A6300454C14 /* Sources */,
+				2355C8731DFB9A6300454C14 /* Frameworks */,
+				2355C8741DFB9A6300454C14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoinAlertSiriIntentUI;
+			productName = CoinAlertSiriIntentUI;
+			productReference = 2355C8761DFB9A6300454C14 /* CoinAlertSiriIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -127,7 +261,17 @@
 				TargetAttributes = {
 					2348AD211DF8FEDD007BA8D6 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 4Y2PAU8FAU;
+						DevelopmentTeam = W6CV48Y9Q8;
+						ProvisioningStyle = Manual;
+					};
+					2355C86C1DFB9A6200454C14 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = W6CV48Y9Q8;
+						ProvisioningStyle = Automatic;
+					};
+					2355C8751DFB9A6300454C14 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = W6CV48Y9Q8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -146,6 +290,8 @@
 			projectRoot = "";
 			targets = (
 				2348AD211DF8FEDD007BA8D6 /* CoinAlert */,
+				2355C86C1DFB9A6200454C14 /* CoinAlertSiriIntent */,
+				2355C8751DFB9A6300454C14 /* CoinAlertSiriIntentUI */,
 			);
 		};
 /* End PBXProject section */
@@ -169,6 +315,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2355C86B1DFB9A6200454C14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2355C8741DFB9A6300454C14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2355C87F1DFB9A6300454C14 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -181,7 +342,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2355C8691DFB9A6200454C14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2355C8701DFB9A6300454C14 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2355C8721DFB9A6300454C14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2355C87C1DFB9A6300454C14 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2355C8821DFB9A6300454C14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2355C8751DFB9A6300454C14 /* CoinAlertSiriIntentUI */;
+			targetProxy = 2355C8811DFB9A6300454C14 /* PBXContainerItemProxy */;
+		};
+		2355C8851DFB9A6300454C14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2355C86C1DFB9A6200454C14 /* CoinAlertSiriIntent */;
+			targetProxy = 2355C8841DFB9A6300454C14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2348AD291DF8FEDE007BA8D6 /* Main.storyboard */ = {
@@ -198,6 +388,14 @@
 				2348AD2F1DF8FEDE007BA8D6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2355C87D1DFB9A6300454C14 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2355C87E1DFB9A6300454C14 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -299,12 +497,15 @@
 		2348AD351DF8FEDE007BA8D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4Y2PAU8FAU;
+				DEVELOPMENT_TEAM = W6CV48Y9Q8;
 				INFOPLIST_FILE = CoinAlert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bsull.coin-alert";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brady.coinalert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c02bde26-9bb0-4545-8f8c-19b65d248b5b";
+				PROVISIONING_PROFILE_SPECIFIER = "CoinAlert dev";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -312,12 +513,65 @@
 		2348AD361DF8FEDE007BA8D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4Y2PAU8FAU;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CoinAlert/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bsull.coin-alert";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brady.coinalert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2355C8881DFB9A6300454C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = W6CV48Y9Q8;
+				INFOPLIST_FILE = CoinAlertSiriIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brady.coinalert.CoinAlertSiriIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2355C8891DFB9A6300454C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CoinAlertSiriIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brady.coinalert.CoinAlertSiriIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2355C88B1DFB9A6300454C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = W6CV48Y9Q8;
+				INFOPLIST_FILE = CoinAlertSiriIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brady.coinalert.CoinAlertSiriIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2355C88C1DFB9A6300454C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = CoinAlertSiriIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brady.coinalert.CoinAlertSiriIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -342,6 +596,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		2355C8871DFB9A6300454C14 /* Build configuration list for PBXNativeTarget "CoinAlertSiriIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2355C8881DFB9A6300454C14 /* Debug */,
+				2355C8891DFB9A6300454C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2355C88A1DFB9A6300454C14 /* Build configuration list for PBXNativeTarget "CoinAlertSiriIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2355C88B1DFB9A6300454C14 /* Debug */,
+				2355C88C1DFB9A6300454C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

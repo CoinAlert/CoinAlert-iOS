@@ -34,7 +34,7 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AfH-KG-SOV">
                                 <rect key="frame" x="16" y="645" width="343" height="2"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coinbase" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GL0-vw-yp8">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coinbase" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GL0-vw-yp8">
                                 <rect key="frame" x="68" y="462" width="238" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="27" id="nXf-Qk-eVc"/>
@@ -85,7 +85,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CALogo" translatesAutoresizingMaskIntoConstraints="NO" id="aUL-Mg-eBQ">
-                                <rect key="frame" x="0.0" y="28" width="375" height="200"/>
+                                <rect key="frame" x="0.0" y="60" width="375" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="aUL-Mg-eBQ" secondAttribute="height" multiplier="15:8" id="InF-ku-u6H"/>
                                 </constraints>
@@ -105,7 +105,7 @@
                             <constraint firstItem="GL0-vw-yp8" firstAttribute="top" secondItem="ffv-ox-f71" secondAttribute="bottom" constant="8" symbolic="YES" id="gzu-Vm-i0q"/>
                             <constraint firstItem="aUL-Mg-eBQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jl5-MM-b8c"/>
                             <constraint firstItem="Dd1-vJ-4yr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jvY-F3-xeO"/>
-                            <constraint firstItem="aUL-Mg-eBQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="28" id="kW2-IX-ebR"/>
+                            <constraint firstItem="aUL-Mg-eBQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="60" id="kW2-IX-ebR"/>
                             <constraint firstItem="muN-PW-HvI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m7a-fm-tfc"/>
                             <constraint firstItem="v38-Hg-85I" firstAttribute="top" secondItem="muN-PW-HvI" secondAttribute="bottom" constant="8" symbolic="YES" id="oh0-B8-C6D"/>
                             <constraint firstItem="v38-Hg-85I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qFx-yw-iz2"/>
