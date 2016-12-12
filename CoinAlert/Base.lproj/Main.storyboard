@@ -31,9 +31,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AfH-KG-SOV">
-                                <rect key="frame" x="16" y="645" width="343" height="2"/>
-                            </progressView>
                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coinbase" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GL0-vw-yp8">
                                 <rect key="frame" x="68" y="462" width="238" height="27"/>
                                 <constraints>
@@ -45,16 +42,6 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="underlineStyle" value="YES"/>
                                 </userDefinedRuntimeAttributes>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unable to Reload Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dd1-vJ-4yr">
-                                <rect key="frame" x="100" y="612" width="174" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="URT-c0-jSE"/>
-                                    <constraint firstAttribute="width" constant="174" id="eHw-7k-hay"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Titillium-Regular" family="Titillium" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="powered by" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffv-ox-f71">
                                 <rect key="frame" x="68" y="433" width="238" height="21"/>
@@ -90,30 +77,54 @@
                                     <constraint firstAttribute="width" secondItem="aUL-Mg-eBQ" secondAttribute="height" multiplier="15:8" id="InF-ku-u6H"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9kl-IZ-P2t" customClass="GADBannerView">
+                                <rect key="frame" x="28" y="624" width="319" height="43"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="ZIk-0F-yrm"/>
+                                    <constraint firstAttribute="width" constant="319" id="zYO-FL-6X3"/>
+                                </constraints>
+                            </view>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AfH-KG-SOV">
+                                <rect key="frame" x="16" y="612" width="343" height="2"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unable to Reload Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dd1-vJ-4yr">
+                                <rect key="frame" x="100" y="581" width="174" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="h3x-hg-Vbr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Titillium-Regular" family="Titillium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ffv-ox-f71" firstAttribute="leading" secondItem="GL0-vw-yp8" secondAttribute="leading" id="2zi-1m-ETr"/>
-                            <constraint firstItem="AfH-KG-SOV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Bd0-cd-pPG"/>
-                            <constraint firstItem="AfH-KG-SOV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BoH-dH-Y1K"/>
+                            <constraint firstItem="AfH-KG-SOV" firstAttribute="top" secondItem="Dd1-vJ-4yr" secondAttribute="bottom" constant="10" id="Cqy-eg-uRj"/>
                             <constraint firstItem="GL0-vw-yp8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dm4-fb-oHY"/>
-                            <constraint firstAttribute="bottom" secondItem="AfH-KG-SOV" secondAttribute="bottom" constant="20" symbolic="YES" id="IJO-nb-rn7"/>
                             <constraint firstAttribute="trailing" secondItem="aUL-Mg-eBQ" secondAttribute="trailing" id="MVM-Op-dLP"/>
+                            <constraint firstItem="Dd1-vJ-4yr" firstAttribute="centerX" secondItem="AfH-KG-SOV" secondAttribute="centerX" id="RJu-0u-PDJ"/>
+                            <constraint firstItem="AfH-KG-SOV" firstAttribute="trailing" secondItem="muN-PW-HvI" secondAttribute="trailing" id="Spf-MU-ZWc"/>
                             <constraint firstItem="ffv-ox-f71" firstAttribute="top" secondItem="v38-Hg-85I" secondAttribute="bottom" constant="38" id="TqK-1p-epQ"/>
                             <constraint firstItem="ffv-ox-f71" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tvq-cM-mMF"/>
+                            <constraint firstAttribute="bottom" secondItem="9kl-IZ-P2t" secondAttribute="bottom" id="UIp-gI-l7l"/>
                             <constraint firstItem="muN-PW-HvI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dbw-ia-WZ9"/>
+                            <constraint firstItem="9kl-IZ-P2t" firstAttribute="top" secondItem="AfH-KG-SOV" secondAttribute="bottom" constant="10" id="g84-fX-Gsb"/>
+                            <constraint firstItem="AfH-KG-SOV" firstAttribute="centerX" secondItem="9kl-IZ-P2t" secondAttribute="centerX" id="gH9-N6-BII"/>
+                            <constraint firstItem="Dd1-vJ-4yr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="84" id="gqR-g3-xX8"/>
                             <constraint firstItem="GL0-vw-yp8" firstAttribute="top" secondItem="ffv-ox-f71" secondAttribute="bottom" constant="8" symbolic="YES" id="gzu-Vm-i0q"/>
                             <constraint firstItem="aUL-Mg-eBQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jl5-MM-b8c"/>
-                            <constraint firstItem="Dd1-vJ-4yr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jvY-F3-xeO"/>
                             <constraint firstItem="aUL-Mg-eBQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="60" id="kW2-IX-ebR"/>
+                            <constraint firstItem="AfH-KG-SOV" firstAttribute="leading" secondItem="muN-PW-HvI" secondAttribute="leading" id="lvO-ED-nc1"/>
                             <constraint firstItem="muN-PW-HvI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m7a-fm-tfc"/>
                             <constraint firstItem="v38-Hg-85I" firstAttribute="top" secondItem="muN-PW-HvI" secondAttribute="bottom" constant="8" symbolic="YES" id="oh0-B8-C6D"/>
                             <constraint firstItem="v38-Hg-85I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qFx-yw-iz2"/>
                             <constraint firstItem="ffv-ox-f71" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="tc7-TF-jZD"/>
-                            <constraint firstItem="AfH-KG-SOV" firstAttribute="top" secondItem="Dd1-vJ-4yr" secondAttribute="bottom" constant="12" id="vNa-dh-kMo"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="9kl-IZ-P2t" id="qhw-PB-GQC"/>
                         <outlet property="coinbaseLabel" destination="GL0-vw-yp8" id="xaZ-Fd-nEU"/>
                         <outlet property="errorLabel" destination="Dd1-vJ-4yr" id="sS3-py-CeI"/>
                         <outlet property="priceLabel" destination="v38-Hg-85I" id="uFX-5F-ytU"/>

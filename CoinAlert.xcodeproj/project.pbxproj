@@ -20,6 +20,8 @@
 		2355C8661DFB614800454C14 /* Titillium-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2355C85E1DFB614800454C14 /* Titillium-Semibold.otf */; };
 		2355C8671DFB614800454C14 /* Titillium-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2355C85F1DFB614800454C14 /* Titillium-Thin.otf */; };
 		2355C8681DFB614800454C14 /* Titillium-ThinUpright.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2355C8601DFB614800454C14 /* Titillium-ThinUpright.otf */; };
+		23AE57641DFE59E20083F7CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23AE57631DFE59E20083F7CF /* GoogleService-Info.plist */; };
+		DFFC48613E0A4E549152ACBF /* Pods_CoinAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB2AC0C2011FB70FDB570CB /* Pods_CoinAlert.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +38,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		216AFEF40372F31354BF610D /* Pods-CoinAlert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinAlert.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoinAlert/Pods-CoinAlert.release.xcconfig"; sourceTree = "<group>"; };
 		2348AD221DF8FEDE007BA8D6 /* CoinAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2348AD251DF8FEDE007BA8D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2348AD271DF8FEDE007BA8D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +61,9 @@
 		2355C87E1DFB9A6300454C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		2355C8801DFB9A6300454C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2355C88E1DFB9BE700454C14 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		23AE57631DFE59E20083F7CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		E07A1477D441C2C16EAC0391 /* Pods-CoinAlert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinAlert.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoinAlert/Pods-CoinAlert.debug.xcconfig"; sourceTree = "<group>"; };
+		EAB2AC0C2011FB70FDB570CB /* Pods_CoinAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFFC48613E0A4E549152ACBF /* Pods_CoinAlert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +86,7 @@
 				2355C87A1DFB9A6300454C14 /* CoinAlertSiriIntentUI */,
 				2355C8771DFB9A6300454C14 /* Frameworks */,
 				2348AD231DF8FEDE007BA8D6 /* Products */,
+				99899E44C67EA0D0F20345E0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +104,7 @@
 				2348AD251DF8FEDE007BA8D6 /* AppDelegate.swift */,
 				2355C8581DFB612900454C14 /* Fonts */,
 				2348AD271DF8FEDE007BA8D6 /* ViewController.swift */,
+				23AE57631DFE59E20083F7CF /* GoogleService-Info.plist */,
 				2348AD291DF8FEDE007BA8D6 /* Main.storyboard */,
 				2348AD2C1DF8FEDE007BA8D6 /* Assets.xcassets */,
 				2348AD2E1DF8FEDE007BA8D6 /* LaunchScreen.storyboard */,
@@ -133,6 +142,7 @@
 			children = (
 				2355C88E1DFB9BE700454C14 /* CoreLocation.framework */,
 				2355C8781DFB9A6300454C14 /* IntentsUI.framework */,
+				EAB2AC0C2011FB70FDB570CB /* Pods_CoinAlert.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -147,6 +157,15 @@
 			path = CoinAlertSiriIntentUI;
 			sourceTree = "<group>";
 		};
+		99899E44C67EA0D0F20345E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E07A1477D441C2C16EAC0391 /* Pods-CoinAlert.debug.xcconfig */,
+				216AFEF40372F31354BF610D /* Pods-CoinAlert.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,10 +173,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2348AD341DF8FEDE007BA8D6 /* Build configuration list for PBXNativeTarget "CoinAlert" */;
 			buildPhases = (
+				18F9554C5DA6E72005E79EE0 /* [CP] Check Pods Manifest.lock */,
 				2348AD1E1DF8FEDD007BA8D6 /* Sources */,
 				2348AD1F1DF8FEDD007BA8D6 /* Frameworks */,
 				2348AD201DF8FEDD007BA8D6 /* Resources */,
 				2355C88D1DFB9A6300454C14 /* Embed App Extensions */,
+				75335188D1D9B581A5934155 /* [CP] Embed Pods Frameworks */,
+				65A46F68420641F78697E8C8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,6 +234,7 @@
 				2348AD301DF8FEDE007BA8D6 /* LaunchScreen.storyboard in Resources */,
 				2355C8651DFB614800454C14 /* Titillium-RegularUpright.otf in Resources */,
 				2355C8621DFB614800454C14 /* Titillium-Bold.otf in Resources */,
+				23AE57641DFE59E20083F7CF /* GoogleService-Info.plist in Resources */,
 				2355C8611DFB614800454C14 /* Titillium-Black.otf in Resources */,
 				2355C8681DFB614800454C14 /* Titillium-ThinUpright.otf in Resources */,
 				2348AD2D1DF8FEDE007BA8D6 /* Assets.xcassets in Resources */,
@@ -222,6 +245,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18F9554C5DA6E72005E79EE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		65A46F68420641F78697E8C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoinAlert/Pods-CoinAlert-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75335188D1D9B581A5934155 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoinAlert/Pods-CoinAlert-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2348AD1E1DF8FEDD007BA8D6 /* Sources */ = {
@@ -358,6 +429,7 @@
 		};
 		2348AD351DF8FEDE007BA8D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E07A1477D441C2C16EAC0391 /* Pods-CoinAlert.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -375,6 +447,7 @@
 		};
 		2348AD361DF8FEDE007BA8D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 216AFEF40372F31354BF610D /* Pods-CoinAlert.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class ViewController: UIViewController {
 
@@ -15,6 +16,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var coinbaseLabel: UILabel!
+    @IBOutlet weak var bannerView: GADBannerView!
     
     var timer = Timer()
     var currentPrice = "$..."
@@ -29,6 +31,13 @@ class ViewController: UIViewController {
         coinbaseLabel.isUserInteractionEnabled = true
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.cbPressed))
         coinbaseLabel.addGestureRecognizer(gestureRecognizer)
+        
+        bannerView.adSize = kGADAdSizeSmartBannerPortrait
+        bannerView.adUnitID = "ca-app-pub-3271601096233531/2182439205"
+        bannerView.rootViewController = self
+        let request = GADRequest()
+        request.testDevices = [kGADSimulatorID]
+        bannerView.load(request)
     }
     
     override func viewDidAppear(_ animated: Bool) {
