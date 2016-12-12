@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         bannerView.adUnitID = "ca-app-pub-3271601096233531/2182439205"
         bannerView.rootViewController = self
         let request = GADRequest()
-        request.testDevices = [kGADSimulatorID]
+        request.testDevices = [kGADSimulatorID, "b5f8c1c3e61040225cab0ba43b29c4ea"]
         bannerView.load(request)
     }
     
@@ -80,25 +80,31 @@ class ViewController: UIViewController {
         let task = session.dataTask(with: urlRequest as URLRequest) {
             (data, response, error) -> Void in
             
-            let httpResponse = response as! HTTPURLResponse
-            let statusCode = httpResponse.statusCode
             
-            if (statusCode == 200) {
-                do{
-                    
-                    let json = try JSONSerialization.jsonObject(with: data!, options:.allowFragments)
-                    if let json = json as? [String: Any] {
-                        self.currentPrice = "$\(json["currentPrice"]!)"
+            if let httpResponse = response as? HTTPURLResponse {
+                let statusCode = httpResponse.statusCode
+                
+                if (statusCode == 200) {
+                    do{
+                        
+                        let json = try JSONSerialization.jsonObject(with: data!, options:.allowFragments)
+                        if let json = json as? [String: Any] {
+                            self.currentPrice = "$\(json["currentPrice"]!)"
+                            DispatchQueue.main.async {
+                                self.errorLabel.isHidden = true
+                            }
+                        }
+                        
+                    }catch {
+                        print("Error with Json: \(error)")
                         DispatchQueue.main.async {
-                            self.errorLabel.isHidden = true
+                            self.errorLabel.isHidden = false
                         }
                     }
-                    
-                }catch {
-                    print("Error with Json: \(error)")
-                    DispatchQueue.main.async {
-                        self.errorLabel.isHidden = false
-                    }
+                }
+            } else {
+                DispatchQueue.main.async {
+                    self.errorLabel.isHidden = false
                 }
             }
         }
@@ -119,15 +125,21 @@ class ViewController: UIViewController {
         urlRequest.httpBody = jsonData
         urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
         let session = URLSession.shared
-        let task = session.dataTask(with: urlRequest as URLRequest) {
-            (data, response, error) -> Void in
+            let task = session.dataTask(with: urlRequest as URLRequest) {
+                (data, response, error) -> Void in
+                
+                if let httpResponse = response as? HTTPURLResponse {
+                    
+                    let statusCode = httpResponse.statusCode
+                    
+                    print(statusCode)
+                } else {
+                    DispatchQueue.main.async {
+                        self.errorLabel.isHidden = false
+                    }
+                }
+            }
             
-            let httpResponse = response as! HTTPURLResponse
-            let statusCode = httpResponse.statusCode
-            
-            print(statusCode)
-        }
-        
         task.resume()
         } catch {
             
