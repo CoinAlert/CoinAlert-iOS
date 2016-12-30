@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CoinAlert/ViewController.swift"
-            timestampString = "503210813.718123"
+            timestampString = "504597164.165481"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "updateDevice()"
             landmarkType = "7">
          </BreakpointContent>

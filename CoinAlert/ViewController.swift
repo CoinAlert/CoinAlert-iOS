@@ -57,7 +57,11 @@ class ViewController: UIViewController {
 
     func cbPressed() {
         if let url = URL(string: "https://www.coinbase.com/join/d1str0"){
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(url)
+            }
         }
     }
     
@@ -73,6 +77,19 @@ class ViewController: UIViewController {
         
     }
     
+    func hideErrorLabel() {
+        DispatchQueue.main.async {
+            self.errorLabel.isHidden = true
+        }
+    }
+    
+    func showErrorLabel() {
+        DispatchQueue.main.async {
+            self.errorLabel.isHidden = false
+        }
+    }
+    
+    // Get newest price and update the price label.
     func updatePrice() {
         let requestURL: NSURL = NSURL(string: "https://whatdoesabitcoincost.com/api/current")!
         let urlRequest: NSMutableURLRequest = NSMutableURLRequest(url: requestURL as URL)
@@ -80,37 +97,30 @@ class ViewController: UIViewController {
         let task = session.dataTask(with: urlRequest as URLRequest) {
             (data, response, error) -> Void in
             
-            
             if let httpResponse = response as? HTTPURLResponse {
                 let statusCode = httpResponse.statusCode
                 
+                // We're expecting a 200 response. Anything else is bad.
                 if (statusCode == 200) {
+                    // Do catch because deserialization...
                     do{
-                        
                         let json = try JSONSerialization.jsonObject(with: data!, options:.allowFragments)
                         if let json = json as? [String: Any] {
                             self.currentPrice = "$\(json["currentPrice"]!)"
-                            DispatchQueue.main.async {
-                                self.errorLabel.isHidden = true
-                            }
+                            self.hideErrorLabel()
                         }
                         
                     }catch {
                         print("Error with Json: \(error)")
-                        DispatchQueue.main.async {
-                            self.errorLabel.isHidden = false
-                        }
+                        self.showErrorLabel()
                     }
                 }
             } else {
-                DispatchQueue.main.async {
-                    self.errorLabel.isHidden = false
-                }
+                self.showErrorLabel()
             }
         }
         
         task.resume()
-        
     }
     
     func updateDevice() {
